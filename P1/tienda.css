@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'ratchet';
+    src: url('ratchet.ttf');
+}
+
+@font-face {
+    font-family: 'lombax';
+    src: url('lomax.ttf');
+}
+
+
+.columns {
+
+    display: flex;
+    
+}
+  
