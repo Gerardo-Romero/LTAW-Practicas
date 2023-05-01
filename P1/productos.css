@@ -3,12 +3,49 @@
     src: url('ratchet.ttf');
 }
 
+header{
+    margin:auto;
+    text-align: center;
+    height: auto;
+    flex-direction: column;
+    
+}
+
 body{
     margin:auto;
     text-align: center;
     height: auto;
     flex-direction: column;
-    background-color: black;
+    background: url('vector.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1{
+    font-size: 5vw;
+    color: rgb(0, 204, 255);
+    text-shadow:0px 0px 30px rgb(0, 204, 255),0px 0px 20px rgb(0, 204, 255);
+    font-family: 'ratchet';
+    margin-bottom: -3%;
+    
+}
+
+h2{
+    font-size: 4vw;
+    color: rgb(255, 196, 0);
+    text-shadow:0px 0px 30px rgb(255, 196, 0),0px 0px 20px rgb(255, 196, 0);
+    font-family: 'ratchet';
+    margin-top: 2.5vw;
+}
+
+h3{
+    
+    text-align: center;
+    font-family: 'ratchet';
+    
 }
 
 #imgprod{
@@ -20,20 +57,23 @@ body{
     margin:auto;
     display: flex;
     text-align:center;
-    width:7vw;
-    height: 7vw;
-    
+    width:70vw;
+    height: 12vw;
+    margin-top: -9.9vw;
     justify-content: space-between;
+    
 }
 
 .productos2{
     margin: auto;
-    display: flex;
+    display: inline-block;
     align-items:center;
     width:40vw;
     
     justify-content: space-between;
     height: 7vw;
+    margin-top: -2vw;
+       
 }
 
 .productos3{
@@ -41,33 +81,57 @@ body{
     display: flex;
     text-align:center;
     width:70vw;
-    height: 7vw;
-
-    margin-top: -5vh;
-    
+    height: 12vw;
     justify-content: space-between;
+    margin-top: -5vw;
     
 }
 
-.productos4{
-    margin:auto;
-    display: flex;
-    text-align:center;
-    width:40vw;
+.diagonal_up_left {
+    border-bottom: 4px solid rgb(255, 196, 0);
+    transform: rotate(25deg);
+    width: 11vw;
     height: 7vw;
+    position:absolute;
+    left: 31.5vw;
+    top: 18vw;
     
-    justify-content: space-between;
-}
+  }
 
-.productos5{
-    margin:auto;
-    display: flex;
-    text-align:center;
-    width:7vw;
+  .diagonal_up_right {
+    border-bottom: 4px solid rgb(255, 196, 0);
+    transform: rotate(-25deg);
+    width: 11vw;
     height: 7vw;
+    position:absolute;
+    right: 31.5vw;
+    top: 18vw;
     
-    justify-content: space-between;
-}
+  }
+
+  .diagonal_down_left {
+    border-bottom: 4px solid rgb(255, 196, 0);
+    transform: rotate(-25deg);
+    width: 11vw;
+    height: 7vw;
+    position:absolute;
+    left: 28.5vw;
+    top: 27vw;
+    
+  }
+
+  .diagonal_down_right {
+    border-bottom: 4px solid rgb(255, 196, 0);
+    transform: rotate(25deg);
+    width: 11vw;
+    height: 7vw;
+    position:absolute;
+    right: 28.5vw;
+    top: 27vw;
+    
+  }
+
+  
 
 #b1 {
     
@@ -111,3 +175,40 @@ body{
     border-width: 8px;
     color: rgb(255, 196, 0);
 }
+
+.columns2 {
+    margin:auto;
+    display: flex;
+    text-align:center;
+    width:32vw;
+}
+
+#b2 {
+
+    font-family: 'ratchet';
+    text-align: center;
+    cursor: pointer;
+    
+    color: rgb(255, 196, 0);
+    background-color: transparent;
+    text-shadow:0px 0px 20px rgb(255, 196, 0);
+    font-size: 1.2vw;
+    
+   
+    border:none;
+    margin:auto;
+    
+   
+}
+
+#b2:hover {
+    
+    border:none;
+    color: rgb(255, 153, 0);
+}
+
+#b2:active {
+    
+    transform: translateY(4px);
+    border:none;
+}   
