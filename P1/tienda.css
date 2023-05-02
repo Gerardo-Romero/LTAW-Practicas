@@ -19,10 +19,10 @@ header{
 
 #imglogo{
     
-    width: 10vw;
+    width: 9vw;
     
-    margin-top: 1%;
-    margin-bottom: -3%;
+    margin-top: 0.6%;
+    margin-bottom: -4%;
     animation: girar 32s linear infinite;
 }
 
@@ -118,7 +118,7 @@ body {
 
 main{
     margin-top: 5vh;
-    margin-bottom: 8vh;
+    margin-bottom: 6.5vh;
 }
   
 #b1 {
@@ -176,8 +176,8 @@ main{
     margin:auto;
     display: flex;
     text-align:center;
-    width:60vw;
-    height: 15vw;
+    width:70vw;
+    height: 17.5vw;
      
 }
 
