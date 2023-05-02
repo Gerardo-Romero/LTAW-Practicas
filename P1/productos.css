@@ -31,10 +31,11 @@ h1{
     font-family: 'ratchet';
     margin-bottom: -3%;
     
+    
 }
 
 h2{
-    font-size: 4vw;
+    font-size: 3.5vw;
     color: rgb(255, 196, 0);
     text-shadow:0px 0px 30px rgb(255, 196, 0),0px 0px 20px rgb(255, 196, 0);
     font-family: 'ratchet';
@@ -45,21 +46,96 @@ h3{
     
     text-align: center;
     font-family: 'ratchet';
+   
     
 }
+
+h4{
+   font-size: 1.3vw; 
+    text-align: center;
+    font-family: 'ratchet';
+    margin-top: 0.15vw;
+    
+}
+
+
 
 #imgprod{
     margin-left: auto;
     margin-right: auto;
+    margin-top: -1vw;
 }
+
+#logo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.3vw;
+    animation: girar 32s linear infinite;
+    
+}
+
+
+  
+  @keyframes girar {
+    0% {
+      transform: rotate(0deg);
+      animation-timing-function: ease-in-out;
+    }
+
+    12.5% {
+        transform: rotate(0deg);
+        animation-timing-function: ease-in-out;
+        animation-delay: 4s;
+      }
+
+    25% {
+      transform: rotate(90deg);
+      animation-timing-function: ease-in-out;
+      animation-delay: 8s;
+    }
+    37.5% {
+        transform: rotate(90deg);
+        animation-timing-function: ease-in-out;
+        animation-delay: 12s;
+      }
+    50% {
+      transform: rotate(180deg);
+      animation-timing-function: ease-in-out;
+      animation-delay: 16s;
+    }
+    62.5% {
+        transform: rotate(180deg);
+        animation-timing-function: ease-in-out;
+        animation-delay: 20s;
+      }
+    75% {
+      transform: rotate(270deg);
+      animation-timing-function: ease-in-out;
+      animation-delay: 24s;
+    }
+    87.5% {
+        transform: rotate(270deg);
+        animation-timing-function: ease-in-out;
+        animation-delay: 28s;
+      }
+    100% {
+      transform: rotate(360deg);
+      animation-timing-function: ease-in-out;
+      animation-delay: 32s;
+    }
+  }
+  
+
 
 .productos1{
     margin:auto;
+    
+    
     display: flex;
     text-align:center;
     width:70vw;
     height: 12vw;
-    margin-top: -9.9vw;
+    margin-top: -10.5vw;
     justify-content: space-between;
     
 }
@@ -72,7 +148,7 @@ h3{
     
     justify-content: space-between;
     height: 7vw;
-    margin-top: -2vw;
+    margin-top: -1.4vw;
        
 }
 
@@ -83,51 +159,51 @@ h3{
     width:70vw;
     height: 12vw;
     justify-content: space-between;
-    margin-top: -5vw;
+    margin-top: -4.3vw;
     
 }
 
 .diagonal_up_left {
     border-bottom: 4px solid rgb(255, 196, 0);
-    transform: rotate(25deg);
-    width: 11vw;
+    transform: rotate(21deg);
+    width: 12vw;
     height: 7vw;
     position:absolute;
-    left: 31.5vw;
-    top: 18vw;
+    left: 30.8vw;
+    top: 16.5vw;
     
   }
 
   .diagonal_up_right {
     border-bottom: 4px solid rgb(255, 196, 0);
-    transform: rotate(-25deg);
-    width: 11vw;
+    transform: rotate(-21deg);
+    width: 12vw;
     height: 7vw;
     position:absolute;
-    right: 31.5vw;
-    top: 18vw;
+    right: 30.8vw;
+    top: 16.5vw;
     
   }
 
   .diagonal_down_left {
     border-bottom: 4px solid rgb(255, 196, 0);
-    transform: rotate(-25deg);
-    width: 11vw;
+    transform: rotate(-21deg);
+    width: 12vw;
     height: 7vw;
     position:absolute;
-    left: 28.5vw;
-    top: 27vw;
+    left: 28.2vw;
+    top: 25.3vw;
     
   }
 
   .diagonal_down_right {
     border-bottom: 4px solid rgb(255, 196, 0);
-    transform: rotate(25deg);
-    width: 11vw;
+    transform: rotate(21deg);
+    width: 12vw;
     height: 7vw;
     position:absolute;
-    right: 28.5vw;
-    top: 27vw;
+    right: 28.2vw;
+    top: 25.3vw;
     
   }
 
@@ -140,7 +216,13 @@ h3{
     cursor: pointer;
     
     color: rgb(0, 204, 255);
+    
     background-color: black;
+    background-image: url('Fondo.png');
+    background-size: 100%; 
+    background-position: bottom;
+    background-repeat: no-repeat;
+
     border-style: outset;
     border-width: 8px;
     border-radius: 15px;

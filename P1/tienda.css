@@ -21,9 +21,59 @@ header{
     
     width: 10vw;
     
-    padding-top: 1%;
+    margin-top: 1%;
     margin-bottom: -3%;
+    animation: girar 32s linear infinite;
 }
+
+@keyframes girar {
+    0% {
+      transform: rotate(0deg);
+      animation-timing-function: ease-in-out;
+    }
+
+    12.5% {
+        transform: rotate(0deg);
+        animation-timing-function: ease-in-out;
+        animation-delay: 4s;
+      }
+
+    25% {
+      transform: rotate(90deg);
+      animation-timing-function: ease-in-out;
+      animation-delay: 8s;
+    }
+    37.5% {
+        transform: rotate(90deg);
+        animation-timing-function: ease-in-out;
+        animation-delay: 12s;
+      }
+    50% {
+      transform: rotate(180deg);
+      animation-timing-function: ease-in-out;
+      animation-delay: 16s;
+    }
+    62.5% {
+        transform: rotate(180deg);
+        animation-timing-function: ease-in-out;
+        animation-delay: 20s;
+      }
+    75% {
+      transform: rotate(270deg);
+      animation-timing-function: ease-in-out;
+      animation-delay: 24s;
+    }
+    87.5% {
+        transform: rotate(270deg);
+        animation-timing-function: ease-in-out;
+        animation-delay: 28s;
+      }
+    100% {
+      transform: rotate(360deg);
+      animation-timing-function: ease-in-out;
+      animation-delay: 32s;
+    }
+  }
 
 h1{
     font-size: 5vw;
@@ -78,7 +128,15 @@ main{
     cursor: pointer;
     
     color: rgb(0, 204, 255);
+    
     background-color: black;
+    background-image: url('Fondo.png');
+    background-size: 100%; 
+    background-position: bottom;
+    background-repeat: no-repeat;
+    
+      
+    
     border-style: outset;
     border-width: 8px;
     border-radius: 15px;
