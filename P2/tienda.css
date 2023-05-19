@@ -1,0 +1,310 @@
+@font-face {
+    font-family: 'ratchet';
+    src: url('ratchet.ttf');
+}
+
+@font-face {
+    font-family: 'lombax';
+    src: url('lomax.ttf');
+}
+
+header{
+    margin:auto;
+    text-align: center;
+    height: auto;
+    
+    width: 30%;
+    
+}
+
+
+
+
+#imglogo{
+    
+    width: 10vw;
+    margin: auto;
+    /*margin-top: 0.6%;
+    margin-bottom: -4%;*/
+    animation: girar 32s linear infinite;
+}
+
+@keyframes girar {
+    
+    0% {
+      transform: rotate(0deg);
+      animation-timing-function: ease-in-out;
+    }
+
+    12.5% {
+        transform: rotate(0deg);
+        animation-timing-function: ease-in-out;
+        animation-delay: 4s;
+      }
+
+    25% {
+      transform: rotate(90deg);
+      animation-timing-function: ease-in-out;
+      animation-delay: 8s;
+    }
+    37.5% {
+        transform: rotate(90deg);
+        animation-timing-function: ease-in-out;
+        animation-delay: 12s;
+      }
+    50% {
+      transform: rotate(180deg);
+      animation-timing-function: ease-in-out;
+      animation-delay: 16s;
+    }
+    62.5% {
+        transform: rotate(180deg);
+        animation-timing-function: ease-in-out;
+        animation-delay: 20s;
+      }
+    75% {
+      transform: rotate(270deg);
+      animation-timing-function: ease-in-out;
+      animation-delay: 24s;
+    }
+    87.5% {
+        transform: rotate(270deg);
+        animation-timing-function: ease-in-out;
+        animation-delay: 28s;
+      }
+    100% {
+      transform: rotate(360deg);
+      animation-timing-function: ease-in-out;
+      animation-delay: 32s;
+    }
+  }
+
+#imglupa{
+    width: 110%;
+    margin: auto;
+    }
+
+
+
+
+#b-barra{
+    font-family: 'ratchet';
+    
+    cursor: pointer;
+    
+    color: rgb(0, 204, 255);
+    
+    background-color: black;
+    background-size: 100%; 
+    
+    border-style: outset;
+    border-width: 8px;
+    border-radius: 15px;
+    border-color: rgb(0, 204, 255);
+    box-shadow: 0 0 50px 0 rgb(0, 204, 255);
+    text-shadow:0px 0px 20px rgb(0, 204, 255);
+    font-size: 1.2vw;
+    
+   
+    display: flex;
+    width: 13%;
+    margin-top: 3.1vw;
+    margin-bottom: 2.5vw;
+    margin-right: 4vw;
+    flex-direction: column;
+}
+
+#b-carrito{
+    font-family: 'ratchet';
+    
+    cursor: pointer;
+    
+    color: rgb(0, 204, 255);
+    
+    background-color: black;
+    background-size: 100%; 
+    
+    border-style: outset;
+    border-width: 8px;
+    border-radius: 15px;
+    border-color: rgb(0, 204, 255);
+    box-shadow: 0 0 50px 0 rgb(0, 204, 255);
+    text-shadow:0px 0px 20px rgb(0, 204, 255);
+    font-size: 1.2vw;
+    
+   
+    display: flex;
+    width: 13%;
+    margin-top: 3.1vw;
+    margin-bottom: 2.5vw;
+    margin-left: 4vw;
+    flex-direction: column;
+}
+
+
+
+h1{
+    font-size: 5vw;
+    color: rgb(0, 204, 255);
+    text-shadow:0px 0px 30px rgb(0, 204, 255),0px 0px 20px rgb(0, 204, 255);
+    font-family: 'ratchet';
+    margin: auto;
+    margin-bottom: -9%;
+    margin-left: 0.7%;
+    margin-top: -2%;
+}
+
+h2{
+    text-align: center;
+    font-family: 'ratchet';
+    font-size: 1.5vw;
+    margin-bottom: 8%;
+    
+}
+
+h3{
+    
+    text-align: center;
+    font-family: 'ratchet';
+    
+}
+
+#imgprod{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+body {
+    background: url('vector.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    
+}
+
+main{
+    margin-top: 3.8vh;
+    margin-bottom: 6.4vh;
+}
+  
+#b1 {
+    
+    font-family: 'ratchet';
+    
+    cursor: pointer;
+    
+    color: rgb(0, 204, 255);
+    
+    background-color: black;
+    background-image: url('Fondo.png');
+    background-size: 100%; 
+    background-position: bottom;
+    background-repeat: no-repeat;
+    
+      
+    
+    border-style: outset;
+    border-width: 8px;
+    border-radius: 15px;
+    border-color: rgb(0, 204, 255);
+    box-shadow: 0 0 50px 0 rgb(0, 204, 255);
+    text-shadow:0px 0px 20px rgb(0, 204, 255);
+    font-size: 1.2vw;
+    
+    margin: 2.5%;
+    display: flex;
+    width: 20%;
+    
+    flex-direction: column;
+
+   
+}
+  
+#b1:hover {
+    box-shadow: 0 0 80px 0 rgb(255, 196, 0);
+    border:outset;
+    border-width: 8px;
+    color: rgb(255, 196, 0);
+    text-shadow:0px 0px 20px rgb(255, 196, 0);
+}
+
+#b1:active {
+    
+    transform: translateY(4px);
+    box-shadow: 0 0 80px 0 rgb(255, 196, 0), 0 0 80px 0 rgb(255, 196, 0);
+    border:inset;
+    border-width: 8px;
+    color: rgb(255, 196, 0);
+}
+
+.columns {
+    
+    margin:auto;
+    display: flex;
+    text-align:center;
+    width:70vw;
+    height: 17.5vw;
+     
+}
+
+.columns3 {
+    margin:auto;
+    display: flex;
+    text-align:center;  
+    height: 9.5vw;
+}
+
+.columns2 {
+    margin:auto;
+    display: flex;
+    text-align:center;  
+   
+}
+
+
+
+#b2 {
+
+    font-family: 'ratchet';
+    text-align: center;
+    cursor: pointer;
+    
+    color: rgb(255, 196, 0);
+    background-color: transparent;
+    text-shadow:0px 0px 20px rgb(255, 196, 0);
+    font-size: 1.2vw;
+    
+   
+    border:none;
+    margin:auto;
+    
+   
+}
+
+#b2:hover {
+    
+    border:none;
+    color: rgb(255, 153, 0);
+}
+
+#b2:active {
+    
+    transform: translateY(4px);
+    border:none;
+}   
+
+
+footer{
+    font-size: 1.2vw;
+    color: rgb(255, 196, 0);
+    text-shadow:0px 0px 20px rgb(255, 196, 0);
+    margin:auto;
+    flex-direction: column ;
+   
+    text-align: center;
+    
+}

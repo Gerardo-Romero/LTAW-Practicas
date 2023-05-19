@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'ratchet';
+    src: url('ratchet.ttf');
+}
+
+header{
+    margin:auto;
+    text-align: center;
+    height: auto;
+    flex-direction: column;
+    
+}
+
+body{
+    margin:auto;
+    text-align: center;
+    height: auto;
+    flex-direction: column;
+    background: url('vector.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1{
+    font-size: 5vw;
+    color: rgb(0, 204, 255);
+    text-shadow:0px 0px 30px rgb(0, 204, 255),0px 0px 20px rgb(0, 204, 255);
+    font-family: 'ratchet';
+    margin-bottom: -3%;
+    
+    
+}
+
+h2{
+    font-size: 3.5vw;
+    color: rgb(255, 196, 0);
+    text-shadow:0px 0px 30px rgb(255, 196, 0),0px 0px 20px rgb(255, 196, 0);
+    font-family: 'ratchet';
+    margin-top: 2.5vw;
+}
+
+h3{
+    
+    text-align: center;
+    font-family: 'ratchet';
+   
+    
+}
+
+h4{
+   font-size: 1.3vw; 
+    text-align: center;
+    font-family: 'ratchet';
+    margin-top: 0.15vw;
+    
+}
+
+
+
+#imgprod{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1vw;
+}
+
+#logo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.3vw;
+    animation: girar 32s linear infinite;
+    
+}
+
+
+  
+  @keyframes girar {
+    0% {
+      transform: rotate(0deg);
+      animation-timing-function: ease-in-out;
+    }
+
+    12.5% {
+        transform: rotate(0deg);
+        animation-timing-function: ease-in-out;
+        animation-delay: 4s;
+      }
+
+    25% {
+      transform: rotate(90deg);
+      animation-timing-function: ease-in-out;
+      animation-delay: 8s;
+    }
+    37.5% {
+        transform: rotate(90deg);
+        animation-timing-function: ease-in-out;
+        animation-delay: 12s;
+      }
+    50% {
+      transform: rotate(180deg);
+      animation-timing-function: ease-in-out;
+      animation-delay: 16s;
+    }
+    62.5% {
+        transform: rotate(180deg);
+        animation-timing-function: ease-in-out;
+        animation-delay: 20s;
+      }
+    75% {
+      transform: rotate(270deg);
+      animation-timing-function: ease-in-out;
+      animation-delay: 24s;
+    }
+    87.5% {
+        transform: rotate(270deg);
+        animation-timing-function: ease-in-out;
+        animation-delay: 28s;
+      }
+    100% {
+      transform: rotate(360deg);
+      animation-timing-function: ease-in-out;
+      animation-delay: 32s;
+    }
+  }
+  
+
+
+.productos1{
+    margin:auto;
+    
+    
+    display: flex;
+    text-align:center;
+    width:70vw;
+    height: 12vw;
+    margin-top: -10.5vw;
+    justify-content: space-between;
+    
+}
+
+.productos2{
+    margin: auto;
+    display: inline-block;
+    align-items:center;
+    width:40vw;
+    
+    justify-content: space-between;
+    height: 7vw;
+    margin-top: -1.4vw;
+       
+}
+
+.productos3{
+    margin:auto;
+    display: flex;
+    text-align:center;
+    width:70vw;
+    height: 12vw;
+    justify-content: space-between;
+    margin-top: -4.3vw;
+    
+}
+
+.diagonal_up_left {
+    border-bottom: 5px solid rgb(255, 196, 0);
+    transform: rotate(21deg);
+    width: 12vw;
+    height: 7vw;
+    position:absolute;
+    left: 30.8vw;
+    top: 16vw;
+    
+  }
+
+  .diagonal_up_right {
+    border-bottom: 5px solid rgb(255, 196, 0);
+    transform: rotate(-21deg);
+    width: 12vw;
+    height: 7vw;
+    position:absolute;
+    right: 30.8vw;
+    top: 16vw;
+    
+  }
+
+  .diagonal_down_left {
+    border-bottom: 5px solid rgb(255, 196, 0);
+    transform: rotate(-21deg);
+    width: 12vw;
+    height: 7vw;
+    position:absolute;
+    left: 28.2vw;
+    top: 25.8vw;
+    
+  }
+
+  .diagonal_down_right {
+    border-bottom: 5px solid rgb(255, 196, 0);
+    transform: rotate(21deg);
+    width: 12vw;
+    height: 7vw;
+    position:absolute;
+    right: 28.2vw;
+    top: 25.8vw;
+    
+  }
+
+  
+
+#b1 {
+    
+    font-family: 'ratchet';
+    
+    cursor: pointer;
+    
+    color: rgb(0, 204, 255);
+    
+    background-color: black;
+    background-image: url('Fondo.png');
+    background-size: 100%; 
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    border-style: outset;
+    border-width: 8px;
+    border-radius: 15px;
+    border-color: rgb(0, 204, 255);
+    box-shadow: 0 0 50px 0 rgb(0, 204, 255);
+    text-shadow:0px 0px 20px rgb(0, 204, 255);
+    font-size: 1.2vw;
+    
+    margin: 2.5%;
+    display: flex;
+    height: 100%;
+    aspect-ratio: 1/1;
+    
+    flex-direction: column;
+
+   
+}
+  
+#b1:hover {
+    box-shadow: 0 0 80px 0 rgb(255, 196, 0);
+    border:outset;
+    border-width: 8px;
+    color: rgb(255, 196, 0);
+    text-shadow:0px 0px 20px rgb(255, 196, 0);
+}
+
+#b1:active {
+    
+    transform: translateY(4px);
+    box-shadow: 0 0 80px 0 rgb(255, 196, 0), 0 0 80px 0 rgb(255, 196, 0);
+    border:inset;
+    border-width: 8px;
+    color: rgb(255, 196, 0);
+}
+
+.columns2 {
+    margin:auto;
+    display: flex;
+    text-align:center;
+    width:32vw;
+}
+
+#b2 {
+
+    font-family: 'ratchet';
+    text-align: center;
+    cursor: pointer;
+    
+    color: rgb(255, 196, 0);
+    background-color: transparent;
+    text-shadow:0px 0px 20px rgb(255, 196, 0);
+    font-size: 1.2vw;
+    
+   
+    border:none;
+    margin:auto;
+    
+   
+}
+
+#b2:hover {
+    
+    border:none;
+    color: rgb(255, 153, 0);
+}
+
+#b2:active {
+    
+    transform: translateY(4px);
+    border:none;
+}   
