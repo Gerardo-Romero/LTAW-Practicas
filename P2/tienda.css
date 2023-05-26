@@ -24,9 +24,12 @@ header{
     
     width: 10vw;
     margin: auto;
+    margin-left: 1.2vw;
+    margin-right: 1.2vw;
     /*margin-top: 0.6%;
     margin-bottom: -4%;*/
     animation: girar 32s linear infinite;
+
 }
 
 @keyframes girar {
@@ -79,12 +82,6 @@ header{
     }
   }
 
-#imglupa{
-    width: 110%;
-    margin: auto;
-    }
-
-
 
 
 #b-barra{
@@ -94,6 +91,9 @@ header{
     
     color: rgb(0, 204, 255);
     
+    background-image: url("lupa.png");
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: black;
     background-size: 100%; 
     
@@ -103,16 +103,50 @@ header{
     border-color: rgb(0, 204, 255);
     box-shadow: 0 0 50px 0 rgb(0, 204, 255);
     text-shadow:0px 0px 20px rgb(0, 204, 255);
-    font-size: 1.2vw;
+    
     
    
     display: flex;
-    width: 13%;
+    width: 3.8vw;
     margin-top: 3.1vw;
     margin-bottom: 2.5vw;
-    margin-right: 4vw;
+    
     flex-direction: column;
 }
+
+#b-barra:hover {
+    background-image: url("black.jpg");
+    font-family: 'ratchet';
+    cursor: pointer;
+    width: fit-content;
+    
+    
+   
+    
+}
+
+#barra-bus{
+    font-family: 'ratchet';
+    width: 0;
+    background-color: transparent;
+    color: rgb(255, 196, 0);
+    font-size: 1.1vw;
+    border: none;
+    outline: none;
+    margin: auto;
+    margin-left: 0.5vw;
+    
+}
+
+#b-barra:hover #barra-bus{
+    
+    cursor: pointer;
+    width: 20vw;
+   
+     
+}
+
+
 
 #b-carrito{
     font-family: 'ratchet';
@@ -134,11 +168,12 @@ header{
     
    
     display: flex;
-    width: 13%;
+    width: 3.8vw;
     margin-top: 3.1vw;
     margin-bottom: 2.5vw;
-    margin-left: 4vw;
+    margin-left: 4.8vw;
     flex-direction: column;
+    min-width: 3.8vw;
 }
 
 
@@ -256,6 +291,7 @@ main{
     display: flex;
     text-align:center;  
     height: 9.5vw;
+    
 }
 
 .columns2 {
