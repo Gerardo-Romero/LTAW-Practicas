@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'ratchet';
+    src: url('ratchet.ttf');
+}
+
+body {
+    background: url('vector.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  
+}
+
+header{
+    font-family: 'ratchet';
+    margin:auto;
+    text-align: center;
+    height: auto;  
+    width: 30%;
+    color: rgb(255, 196, 0);
+    font-size: 1.5vw;
+}
+
+#imglogo{
+    
+    width: 10vw;
+    margin: auto;
+    animation: girar 32s linear infinite;
+
+}
+
+main{
+    font-family: 'ratchet';
+    background-color: rgba(0, 0, 0, 0.486);
+    
+    
+    
+    border-style: outset;
+    border-width: 8px;
+    border-radius: 15px;
+    border-color: rgb(0, 204, 255);
+    box-shadow: 0 0 50px 0 rgb(0, 204, 255);
+    text-shadow:0px 0px 20px rgb(0, 204, 255);
+
+    width:60vw;
+    height: 25vw;
+    display:flex;
+    margin: auto;
+
+}
+
+#imglogo{
+    
+    width: 10vw;
+    margin: auto;
+    animation: girar 32s linear infinite;
+
+}
+
+@keyframes girar {
+    
+    0% {
+      transform: rotate(0deg);
+      animation-timing-function: ease-in-out;
+    }
+
+    12.5% {
+        transform: rotate(0deg);
+        animation-timing-function: ease-in-out;
+        animation-delay: 4s;
+      }
+
+    25% {
+      transform: rotate(90deg);
+      animation-timing-function: ease-in-out;
+      animation-delay: 8s;
+    }
+    37.5% {
+        transform: rotate(90deg);
+        animation-timing-function: ease-in-out;
+        animation-delay: 12s;
+      }
+    50% {
+      transform: rotate(180deg);
+      animation-timing-function: ease-in-out;
+      animation-delay: 16s;
+    }
+    62.5% {
+        transform: rotate(180deg);
+        animation-timing-function: ease-in-out;
+        animation-delay: 20s;
+      }
+    75% {
+      transform: rotate(270deg);
+      animation-timing-function: ease-in-out;
+      animation-delay: 24s;
+    }
+    87.5% {
+        transform: rotate(270deg);
+        animation-timing-function: ease-in-out;
+        animation-delay: 28s;
+      }
+    100% {
+      transform: rotate(360deg);
+      animation-timing-function: ease-in-out;
+      animation-delay: 32s;
+    }
+  }
+
+.columns{
+    margin:auto;
+    margin-bottom: -2vw;
+    display: flex;
+    text-align:center;  
+    height: 9.5vw;    
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 2vw;
+    width:60vw;
+}
+
+#barra{
+    font-family: 'ratchet';
+    width: 55vw;
+    height: 2vw;
+    background-color:rgba(0, 0, 0, 0.486);
+    color: rgb(255, 196, 0);
+    font-size: 1.2vw;
+
+    border-style: outset;
+    border-width: 8px;
+    border-radius: 15px;
+    border-color: rgb(255, 187, 0);
+    box-shadow: 0 0 50px 0 rgb(255, 187, 0);
+    text-shadow:0px 0px 20px rgb(255, 187, 0);
+
+    display: flex;
+    margin:auto;
+    margin-right:3vw;
+
+    outline: none;
+}
+
+#b1{
+    font-family: 'ratchet';
+    
+    cursor: pointer;
+    
+    color: rgb(0, 204, 255);
+    
+    background-color: rgb(212, 157, 3);
+    background-image: url('boton-de-enviar.png');
+    background-size: 30%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    
+      
+    
+    border-style: outset;
+    border-width: 8px;
+    border-radius: 15px;
+    border-color: rgb(255, 187, 0);
+    box-shadow: 0 0 50px 0 rgb(255, 187, 0);
+    text-shadow:0px 0px 20px rgb(255, 187, 0);
+    font-size: 1.2vw;
+    
+    margin: auto;
+    display: flex;
+    width: 5vw;
+    height: 2vw;
+}
+
+#b1:hover {
+    box-shadow: 0 0 80px 0 rgb(255, 187, 0);
+    border:inset;
+    border-width: 8px;
+    color: rgb(255, 187, 0);
+    text-shadow:0px 0px 20px rgb(255, 187, 0);
+}
+
+#b1:active {
+    
+    transform: translateY(4px);
+    box-shadow: 0 0 80px 0 rgb(255, 187, 0), 0 0 80px 0 rgb(255, 187, 0);
+    border:outset;
+    border-width: 8px;
+    color: rgb(255, 187, 0);
+}
