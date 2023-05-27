@@ -4,28 +4,28 @@
         {
             "name": "8000",
             "price": 100000,
-            "description":,
+            "description": "",
             "type":"Omnillaves"
         },   
 
         {
             "name": "8000-V2",
             "price": 200000,
-            "description":,
+            "description": "",
             "type":"Omnillaves"
         },  
 
         {
             "name": "8000-V3",
             "price": 300000,
-            "description":,
+            "description": "",
             "type":"Omnillaves"
         },  
 
         {
             "name": "Pretoriana",
             "price": 1200000,
-            "description":,
+            "description": "",
             "type":"Omnillaves"
         },  
 
@@ -33,28 +33,28 @@
         {
             "name": "T.A.U.N",
             "price": 10000000,
-            "description":,
+            "description":"",
             "type":"Armas"
         },   
 
         {
             "name": "Zumbahojas",
             "price": 1500000,
-            "description":,
+            "description": "",
             "type":"Armas"
         },  
 
         {
             "name": "Incendiador",
             "price": 250000,
-            "description":,
+            "description": "",
             "type":"Armas"
         },  
 
         {
             "name": "Guerreante",
             "price": 2000000,
-            "description":,
+            "description": "",
             "type":"Armas"
         },  
 
@@ -62,28 +62,28 @@
         {
             "name": "Infernox",
             "price": 3000000,
-            "description":,
+            "description": "",
             "type":"Armaduras"
         },   
 
         {
             "name": "Merodeadora",
             "price": 3500000,
-            "description":,
+            "description": "",
             "type":"Armaduras"
         },  
 
         {
             "name": "Tetrafibra",
             "price": 600000,
-            "description":,
+            "description": "",
             "type":"Armaduras"
         },  
 
         {
             "name": "Carbonox",
             "price": 2800000,
-            "description":,
+            "description": "",
             "type":"Armaduras"
         },  
 
@@ -91,28 +91,28 @@
         {
             "name": "Balanceador",
             "price": 120000,
-            "description":,
+            "description": "",
             "type":"Artilugios"
         },   
 
         {
             "name": "Gravitabotas",
             "price": 100000,
-            "description":,
+            "description": "",
             "type":"Artilugios"
         },  
 
         {
             "name": "Megabotas",
             "price": 500000,
-            "description":,
+            "description": "",
             "type":"Artilugios"
         } ,
 
         {
             "name": "Holodisfraz",
             "price": 1000000,
-            "description":,
+            "description": "",
             "type":"Artilugios"
         }  
 
@@ -136,7 +136,7 @@
             "name":"Clank",
             "username": "AgenteC",
             "email":"agente_c@quarkmail.com"
-        },
+        }
 
     ]
 }

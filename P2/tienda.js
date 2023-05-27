@@ -1,4 +1,6 @@
 const http = require('http');
+//-- Importar el módulo FS
+
 const fs = require('fs');
 const { error } = require('console');
 
@@ -23,10 +25,9 @@ function print_info_req(req) {
 }
 
 //-- Definir el puerto a utilizar
-const PUERTO = 8080;
+const PUERTO = 9000;
 //-- 2º Conectarme a la base de datos
-//-- Importar el módulo FS
-const fs = require('fs');
+
 
 console.log("Lectura síncrona de un fichero");
 
@@ -59,44 +60,43 @@ const server = http.createServer((req, res) => {
       
     //-- 3º Buscar en la base de datos
     
-      const filteredArray = []
+      const FArray = []
       for(let i=0;i<basedatos.productos.length;i++){
         if (basedatos.productos[i].name.toUpperCase().startsWith(productFind.toUpperCase())) {
-          filteredArray.push(basedatos.productos[i].name);
+          FArray.push(basedatos.productos[i].name);
         }
       }
-       basedatos.products.map(function(elemento) {
-        if ((elemento.name).toUpperCase().startsWith(search.toUpperCase())) {
-          filteredArray.push([elemento.name ,elemento.id]);
-        }
-      });
-      
-    }
 
-    //-- 4º Responder
 
-  }
+       //-- 4º Responder 
+      res.statusCode = 200;
+      res.statusMessage = "OK"
+      res.write(JSON.stringify(FArray));
+
+      res.end();
   
-  fs.readFile(URL.pathname.slice(1),(err, data) => { 
-    if(!err){
-      
-      res.write(data);
-      res.end();
-    }else{
-      res.write('error404');
-      res.end();
-    }
-    
 
+   
+
+  }else{
+    fs.readFile(URL.pathname.slice(1),(err, data) => { 
+      if(!err){
+        res.write(data);
+        res.end();
+      }else{
+        res.write('error404');
+        res.end();
+      }
   //-- Terminar la respuesta y enviarla
-    
-
-  });
-
-  
+    });
+  };
 });
 
 //-- Activar el servidor: ¡Que empiece la fiesta!
 server.listen(PUERTO);
 
 console.log("Happy server activado!. Escuchando en puerto: " + PUERTO);
+
+//-- Ahora categorías
+
+
