@@ -4,7 +4,7 @@ const http = require('http');
 const express = require('express');
 const colors = require('colors');
 
-const PUERTO = 8080;
+const PUERTO = 9000;
 
 //-- Crear una nueva aplciacion web
 const app = express();
@@ -18,7 +18,8 @@ const io = new socketServer(server);
 //-------- PUNTOS DE ENTRADA DE LA APLICACION WEB
 //-- Definir el punto de entrada principal de mi aplicación web
 app.get('/', (req, res) => {
-  res.send('Bienvenido a mi aplicación Web!!!' + '<p><a href="/Ej-07.html">Test</a></p>');
+  path=__dirname +'/public/cliente.html';
+  res.sendFile(path);
 });
 
 //-- Esto es necesario para que el servidor le envíe al cliente la
@@ -34,18 +35,23 @@ io.on('connect', (socket) => {
   
   console.log('** NUEVA CONEXIÓN **'.yellow);
 
+  socket.broadcast.emit('server',"Se ha conectado un usuario")
+  socket.emit('server', "Bienvenido!")
+
   //-- Evento de desconexión
   socket.on('disconnect', function(){
     console.log('** CONEXIÓN TERMINADA **'.yellow);
+    io.emit('server',"Se ha desconectado un usuario")
   });  
 
   //-- Mensaje recibido: Hacer eco
   socket.on("message", (msg)=> {
     console.log("Mensaje Recibido!: " + msg.blue);
-
-    //-- Hacer eco
-    socket.send(msg);
+    socket.broadcast.emit("message",msg)
+    
   });
+
+
 
 });
 

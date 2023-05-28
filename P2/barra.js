@@ -17,10 +17,13 @@ if (searchBar.value.length > 2){
       m.onreadystatechange = () => {
         if (m.readyState==4 && m.status == 200) {
           results = JSON.parse(m.responseText)
-          console.log(results)
+          
 
-          for (let i = 0; i< results[0].length;i++){
-            searchBarText.innerHTML = searchBarText.innerHTML + "<p id='result_search' >"+ results[0][i]+"</p>"
+          for (let i = 0; i< results.length;i++){
+            searchBarText.innerHTML = searchBarText.innerHTML + "<p id='result_search' onclick= \"location.href='/" + results[i][1] + ".html';\" > "+ results[i][0] +"  </p>"
+            //--onclick =\"location.href='/" + results[i][1] + ".html' >"+ results[i][0]+"</p>"
+            console.log(results[i])
+            console.log(searchBarText)
           }
         }
       }

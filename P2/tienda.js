@@ -63,7 +63,7 @@ const server = http.createServer((req, res) => {
       const FArray = []
       for(let i=0;i<basedatos.productos.length;i++){
         if (basedatos.productos[i].name.toUpperCase().startsWith(productFind.toUpperCase())) {
-          FArray.push(basedatos.productos[i].name);
+          FArray.push([basedatos.productos[i].name , basedatos.productos[i].type.toLowerCase()]);
         }
       }
 
