@@ -23,7 +23,7 @@ function print_info_req(req) {
 }
 
 //-- Definir el puerto a utilizar
-const PUERTO = 8080;
+const PUERTO = 9000;
 
 //-- Crear el servidor
 const server = http.createServer((req, res) => {
